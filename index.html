@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Submarine Store</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="store">
+<header class="top"><a class="brand" href="index.html"><span class="logo">S</span> submarine</a><nav><a class="active" href="index.html">Магазин</a><a href="dashboard.html">Dashboard ↗</a></nav><button class="ghost" id="authBtn">Войти</button><div class="user" id="userBadge">G</div></header>
+<main class="wrap">
+<section class="hero"><div><div class="eyebrow">ЦИФРОВАЯ БИБЛИОТЕКА</div><h1>Найди своё<br><em>следующее приложение.</em></h1><p>Игры, инструменты и программы — в одном месте.</p><div class="search"><span>⌕</span><input id="search" placeholder="Поиск приложений..." /><kbd>ENTER</kbd></div></div><div class="hero-art"><div class="orb"></div><div class="float-card fc1">✦ <b>Открывай новое</b><small>Каждый день</small></div><div class="float-card fc2">⬡ <b>Submarine Select</b><small>Подборка редакции</small></div><div class="ring">S</div></div></section>
+<section class="section-head"><div><div class="eyebrow">КАТАЛОГ</div><h2>Исследуй коллекцию</h2></div><button class="ghost" id="submitBtn">＋ Предложить приложение</button></section>
+<div class="filters" id="filters"><button class="chip selected" data-cat="Все">Все</button><button class="chip" data-cat="Игры">Игры</button><button class="chip" data-cat="Инструменты">Инструменты</button><button class="chip" data-cat="Мультимедиа">Мультимедиа</button><button class="chip" data-cat="Мобильные">Мобильные</button></div>
+<section class="cards" id="cards"></section>
+<section class="bottom-cta"><div><div class="eyebrow">ЕСТЬ ЧТО ПОКАЗАТЬ?</div><h2>Опубликуй свой проект<br>в Submarine.</h2><p>Отправь заявку — команда проверит её перед публикацией.</p></div><button class="primary" id="submitBtn2">Отправить заявку <span>→</span></button></section>
+<footer><span class="brand"><span class="logo">S</span> submarine</span><span>Твоя библиотека цифровых открытий.</span><span>© 2026 Submarine</span></footer>
+</main>
+<div class="modal hidden" id="modal"><div class="dialog"><button class="close" id="close">×</button><div class="eyebrow">НОВАЯ ЗАЯВКА</div><h2>Предложить приложение</h2><label>Название<input placeholder="Например, Pixel Studio"></label><label>Ссылка на файл или страницу<input placeholder="https://..."></label><label>Категория<select><option>Игры</option><option>Инструменты</option><option>Мультимедиа</option><option>Мобильные</option></select></label><label>Описание<textarea placeholder="Расскажи о приложении"></textarea></label><button class="primary full" id="send">Отправить на проверку →</button><p class="hint" id="notice"></p></div></div>
+<script type="module" src="app.js"></script></body></html>
